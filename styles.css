@@ -1,0 +1,176 @@
+.container {
+    height: 600px;
+    width: 600px;
+    box-sizing: border-box;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    margin: 2em auto;
+    left: 30%;
+    flex-wrap: wrap;
+    background: #000;
+    font-family: Georgia;
+    align-items: center;
+}
+
+.main-controls {
+    box-sizing: border-box;
+    width: 420px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    left: 0px;
+    top: 7%;
+}
+
+
+.grid {
+    left: 0%;
+    height: 450px;
+    width: 420px;
+    display: flex;
+    box-sizing: border-box;
+    position: absolute;
+    border: .1px solid black;
+    flex-wrap: wrap;
+    background-image: url(images/boom.jpg);
+    background-size: 420px 450px;
+    background-repeat: no-repeat;
+}
+
+label {
+    display: inline-flex;
+    justify-content: end;
+    align-content: center;
+    position: relative;
+    box-sizing: border-box;
+    font-family: Georgia;
+    left: 0%;
+    width: 27%;
+    /* height: -5%; */
+    margin: 0px;
+    flex-wrap: wrap;
+    top: 0;
+    padding: .2em;
+    background: #2007CE;
+    color: #fff;
+    border: .1em solid #a6a491;
+}
+
+.game-results {
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    left: 60%;
+    font-family: Georgia;
+    margin: 2em 0 2em 0;
+    padding: -1.5em;
+    top: 0;
+    font-size: 1em;
+    background: #2007CE;
+    color: #fff;
+}
+
+.gameDifficulty {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    left: 0%;
+    position: relative;
+    box-sizing: border-box;
+    width: 25%;
+    height: 5%;
+    margin: 0px;
+    padding: 0 .5em;
+    flex-wrap: wrap;
+    top: 0%;
+}
+
+.startGameBtn {
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    width: 22%;
+    height: 30%;
+    left: 0%;
+    background: #2007CE;
+    font-family: Georgia;
+    position: relative;
+    top: 0;
+    color: #fff;
+    padding: .2em;
+    border: .15em solid #a6a491
+}
+
+.restartGameBtn {
+        display: inline-flex;
+            justify-content: center;
+            align-content: center;
+            width: 22%;
+            height: 30%;
+            left: 0%;
+            background: #2007CE;
+            font-family: Georgia;
+            position: relative;
+            top: 0;
+            color: #fff;
+            padding: .2em;
+            border: .15em solid #a6a491
+}
+
+
+.grid div {
+    color: #fafa39;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    position: relative;
+    display: block;
+    z-index: 1;
+    border: 1px solid blue;
+    left: 2%;
+    margin: .1em 0;
+    box-shadow: 3px 3px 5px gray;
+}
+
+
+::before.checked, ::after.checked{
+    background-color: blue;
+}
+
+
+
+::before.bomb, ::after.bomb {
+    background-color: blue;
+}
+
+.flags-left  {
+    top: 0%;
+    display: inline-flex;
+    position: absolute;
+    font-family: Georgia;
+    color: #fff;
+    padding: 0 .5em
+}
+
+.display {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 420px;
+    left: 0px;
+    background: #2007CE;
+    border: .15em solid #a6a491;
+    position: absolute;
+    top: 90%;
+    color: #fff;
+    padding: 0 .5em;
+    height: 60px;
+}
